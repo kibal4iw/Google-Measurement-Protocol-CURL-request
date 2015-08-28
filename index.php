@@ -30,9 +30,9 @@ function execute_request_to_google($data, $url) {
 function submit_data_to_google($order_data, $content_data, $order_source) {
     // Формирование данных для аналитики
     $gaurl = 'https://ssl.google-analytics.com/collect'; // https://developers.google.com/analytics/devguides/collection/protocol/v1/reference#transport
-    $gaid = 'UA-65338473-1'; // Идентификатор GA
+    $gaid = ''; // Идентификатор GA
     $gav = '1'; // Версия GA
-    $gasitename = 'i.factor.ua'; // Название сайта
+    $gasitename = ''; // Название сайта
 
     // Список параметров https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#
     $cid = gen_uuid();  // Client ID
